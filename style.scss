@@ -31,18 +31,31 @@ h1 {
 h2 {
     font-size: 4.8em; //48px
     font-weight: 300;
+    
 }
 
 .button {
-    font: 400 17px  Roboto;
+    font: 400 2.3em Roboto;
     cursor: pointer;
-    width: 16rem;
-    height: 6rem;
+    
     transition: all .3s;
     letter-spacing: 0.9px;
-    border-radius: 5px;
+   
     background-color: $color-orange-main;
     color: $color-font-light;
+}
+
+.survive__button {
+    width: 16rem;
+    height: 6rem;
+    border-radius: 5px;
+
+}
+
+.get-notified__button {
+    height: 5.9rem;
+    width: 12rem;
+    border: none;
 }
 
 .bg__wrapper, .latest-articles, .get-notified, .footer {
@@ -58,7 +71,8 @@ h2 {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    
+    margin-top: 12rem;
+    margin-bottom: 20.5rem;
 }
 
 .latest-articles {
@@ -123,6 +137,7 @@ h2 {
 /* identical to box height, or 187% */
     color: $color-font-light;
     text-transform: uppercase;
+    padding-left: 1.6rem;
 }
 
 .menu__list {
@@ -138,7 +153,7 @@ h2 {
     //font-family: ;
     font-size: 2.3em ;
     //line-height: 1.5rem;
-    letter-spacing: 0px;
+    letter-spacing: 0.01em;
     text-align: left;
 
     color: $color-font-light;
@@ -161,7 +176,7 @@ h2 {
 
 .survival {
     padding-top: 8rem;
-    padding-bottom: 24rem;
+    padding-bottom: 23rem;
    
 }
 
@@ -180,7 +195,7 @@ h2 {
 }
 
 .latest-articles__content {
-    padding-top: 12rem;
+    padding-top: 8.5rem;
     max-width: 33.2rem;
     display: flex;
     flex-direction: column;
@@ -190,11 +205,13 @@ h2 {
 
 .latest-articles__title {
     color: $color-font-dark;
+    margin-bottom: 2.5rem;
 }
 
 .latest-articles__text {
     font-size: 2.4em;
     color: $color-font-grey;
+    margin: 0;
 }
 
 .arrow__container {
@@ -257,3 +274,83 @@ h2 {
     margin: 0;
 }
 
+.get-notified {
+    flex-direction: column;
+    align-items: center;
+}
+
+.get-notified__title {
+    font-size: 2.7em;
+    color: $color-font-dark;
+}
+
+.input {
+    padding-left: 1.2rem;
+    font: 400 2.4em Roboto;
+    height: 5.9rem;
+    width: 54rem;
+    background-color: $background-color-mid;
+    border: 1px solid $color-font-grey;
+    opacity: 0.5;
+}
+
+.form {
+    padding-bottom: 24rem;
+    padding-top: 6rem;
+}
+
+.footer {
+    background: url(./assets/images/footer.png);
+}
+
+.footer__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15rem 0;
+}
+
+.footer__media {
+    width: 28rem;
+}
+
+.footer__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.link {
+    border: 1.3px solid $color-font-light;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-position: center;
+    background-color: $color-font-light;
+}
+
+.a-link {
+    display: inline-block;  
+    width: 4rem;
+    height: 4rem;
+}
+
+.fb-link {
+    background-image: url(./assets/icons/fb.svg);
+}
+
+.in-link {
+    background-image: url(./assets/icons/in.svg);
+}
+
+.pi-link {
+    background-image: url(./assets/icons/pi.svg);
+}
+
+.tg-link {
+    background-image: url(./assets/icons/tg.svg);
+}
